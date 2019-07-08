@@ -1,0 +1,71 @@
+// Styling for the services section
+.page-section.intro {
+	padding: 50px 0 0;
+}
+.page-section.embroidery.toc {
+	padding: 0 0 100px;
+}
+.page-section.toc {
+	p {
+		padding-left: 4px;
+	}
+	.navbar-nav {
+		flex-direction: row;
+		li>a {
+		  font-size: 16px;
+		  &:active,&:hover,&:focus {
+			  color: $primary;
+			  border-left: 1px solid $primary;
+		  }
+		}
+	}
+}
+.embroidery {
+	position: relative;
+	.embroidery-link {
+		position: relative;
+		display: block;
+		max-width: 400px;
+		margin: 0 auto;
+		cursor: pointer;
+		text-decoration: none;
+		.embroidery-hover {
+	    border-radius: 100%;
+	    background: fade-out($primary, .1);
+	    opacity: 0;
+	    position: absolute;
+	    width: 120px;
+	    height: 120px;
+	    -webkit-transition: all ease 0.5s;
+	    -moz-transition: all ease 0.5s;
+	    transition: all ease 0.5s;
+	    color: $white;
+	    .embroidery-hover-content {
+        position: relative;
+	    	font-size: 20px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        i {
+	        position: absolute;
+        	transform: translate3d(-50%,-50%,0);
+	        -webkit-transform: translate3d(-50%,-50%,0);
+	        -moz-transform: translate3d(-50%,-50%,0);
+	        -ms-transform: translate3d(-50%,-50%,0);
+          top: 50%;
+          left: 50%;
+        }
+	    }
+	  }
+		&:hover {
+			.embroidery-hover {
+        opacity: 1;
+			}
+    }
+	}
+}
+.embroidery-heading {
+  margin: 15px 0;
+  text-transform: none;
+}

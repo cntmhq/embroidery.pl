@@ -1,0 +1,98 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  @include heading-font;
+  color: $primary
+}
+
+.page-section.toc {
+  padding: 150px 0 100px;
+}
+.page-section {
+  padding: 100px 0;
+  &:nth-child(odd):not(.contact):not(.bg) {
+    background-color: #f7f7f7;
+  }
+  .section-heading,
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+  .row.featured {
+    margin-top: -264px;
+    h1.section-heading {
+      color: $white;
+      line-height: 40px;
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 64px;
+    }
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+@media(max-width:768px) {
+  .page-section {
+    .row.featured {
+      h1.section-heading {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

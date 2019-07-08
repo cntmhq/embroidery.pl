@@ -1,0 +1,101 @@
+// Styling for the team=>caps section
+.gallery {
+  img {
+    max-width: 100%;
+    padding: 14px;
+  }
+}
+.caps-item {
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 100%;
+  // overflow: hidden;
+  .caps-link {
+      position: relative;
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      cursor: pointer;
+      .caps-hover {
+        border-radius: 100%;
+        background: fade-out($primary, .1);
+        opacity: 0;
+        position: absolute;
+        width: calc(100% - 26px);
+        height: calc(100% - 26px);
+        transform: translate3d(14px,14px,0);
+        -webkit-transform: translate3d(14px,14px,0);
+        -moz-transform: translate3d(14px,14px,0);
+        -ms-transform: translate3d(14px,14px,0);
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+        .caps-hover-content {
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 20px;
+          margin-top: -12px;
+          text-align: center;
+          color: white;
+          i {
+            margin-top: -12px;
+          }
+          img {
+            width: 100%;
+            border: 7px solid $white;
+            background-color: $white;
+          }
+          h3,
+          h4 {
+            margin: 0;
+          }
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+  }
+  img {
+    width: 100%;
+    // height: 325px;
+    border: 7px solid $white;
+    background-color: $white;
+  }
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+// @media(max-width:767px) {
+  // .caps-item {
+    // max-width: 200px;
+    // img {
+      // width: 100%;
+      // height: 200px;
+    // }
+  // }
+// }
+@media(max-width:992px) {
+  .caps-item {
+    max-width: 200px;
+    img {
+      // width: 100%;
+      // height: 200px;
+    }
+  }
+}
