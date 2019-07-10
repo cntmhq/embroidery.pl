@@ -1,1 +1,62 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#007a3f;}</style></defs><title>gotowe</title><path class="cls-1" d="M50,.58A49.42,49.42,0,1,0,99.42,50,49.42,49.42,0,0,0,50,.58Zm21.72,49-4.93-4.75V76.42H32.66l-.17-32-5.23,5.43L17.07,41.61s9.32-10.21,11.76-13,4.53-2.19,4.53-2.19h8s1,5.75,8.27,5.75,8.62-6,8.62-6,4.79-.18,8.19-.09a6.49,6.49,0,0,1,5.05,2.57L82.74,41.47Z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 100 100"
+   version="1.1"
+   sodipodi:docname="gotowe.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata3737">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1177"
+     id="namedview3735"
+     showgrid="false"
+     inkscape:zoom="9.8"
+     inkscape:cx="50"
+     inkscape:cy="50"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs3728">
+    <style
+       id="style3726">.cls-1{fill:#007a3f;}</style>
+  </defs>
+  <title
+     id="title3730">gotowe</title>
+  <path
+     class="cls-1"
+     d="M50,.58A49.42,49.42,0,1,0,99.42,50,49.42,49.42,0,0,0,50,.58Zm21.72,49-4.93-4.75V76.42H32.66l-.17-32-5.23,5.43L17.07,41.61s9.32-10.21,11.76-13,4.53-2.19,4.53-2.19h8s1,5.75,8.27,5.75,8.62-6,8.62-6,4.79-.18,8.19-.09a6.49,6.49,0,0,1,5.05,2.57L82.74,41.47Z"
+     id="path3732" />
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;fill:#ffffff"
+     d="m 66.449219,25.580078 c -3.429709,-0.09049 -8.21875,0.08984 -8.21875,0.08984 l -0.384766,0.01563 -0.08398,0.375 c 0,0 -0.310569,1.380957 -1.480469,2.789062 -1.1699,1.408105 -3.152942,2.820313 -6.650391,2.820313 -3.503179,0 -5.394066,-1.351397 -6.472656,-2.689453 -1.07859,-1.338056 -1.304687,-2.646485 -1.304687,-2.646485 l -0.07227,-0.414062 h -8.421875 l 0.138672,0.01953 c 0,0 -0.675948,-0.180285 -1.605469,0.04297 -0.929521,0.223253 -2.161189,0.837207 -3.439453,2.298828 -2.422583,2.770084 -11.751953,12.992187 -11.751953,12.992188 l -0.357422,0.390624 10.958984,8.863282 4.69336,-4.875 0.166015,31.267578 H 67.289062 V 46.003906 l 4.386719,4.228516 0.339844,-0.25 11.458984,-8.433594 -11.585937,-13.201172 c -1.29221,-1.705859 -3.296059,-2.72574 -5.435547,-2.767578 z"
+     id="path3764" />
+</svg>
