@@ -156,6 +156,11 @@
   </section>
   <!-- Footer -->
   <footer class="footer">
+    <div class="up">
+      <a href="#page-top" title="do góry" class="btn nav-link">
+          <span class="fa fa-2x fa-angle-up"></span>
+      </a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -184,7 +189,32 @@
 
   <!-- Custom scripts for this template -->
   <script src="../js/agency.min.js"></script>
-  
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var navSelector = "#toc";
+      var $myNav = $(navSelector);
+      Toc.init($myNav);
+      
+      $('a.nav-link[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 154)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      });
+
+      $("body").scrollspy({
+        target: navSelector,
+        offset: 56
+      });
+
+    });
+  </script>
+
 </body>
 
 </html>
