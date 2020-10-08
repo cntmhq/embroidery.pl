@@ -96,3 +96,11 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+// Back to top button
+footer .up {
+  display: inline-block;
+  position: fixed;
+  right: 1em;
+  bottom: 1.25em;
+}
