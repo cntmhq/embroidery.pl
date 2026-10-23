@@ -29,7 +29,7 @@ const banner = ['/*!\n',
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./public"
     },
     port: 3000,
     open: false
@@ -45,38 +45,38 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./vendor/"]);
+  return del(["./public/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap'));
+    .pipe(gulp.dest('./public/vendor/bootstrap'));
   // Font Awesome CSS
   var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
-    .pipe(gulp.dest('./vendor/fontawesome-free/css'));
+    .pipe(gulp.dest('./public/vendor/fontawesome-free/css'));
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
-    .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
+    .pipe(gulp.dest('./public/vendor/fontawesome-free/webfonts'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./vendor/jquery-easing'));
+    .pipe(gulp.dest('./public/vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'));
+    .pipe(gulp.dest('./public/vendor/jquery'));
   return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
 }
 
 // partials task
 // function partials() {
 //   return gulp
-//     .src('./index.html')
+//     .src('./public/index.html')
 //     .pipe(injectPartials())
-//     .pipe(gulp.dest('./'));
+//     .pipe(gulp.dest('./public'));
 
 // }
 
@@ -97,12 +97,12 @@ function css() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./public/css"))
     .pipe(rename({
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./public/css"))
     .pipe(browsersync.stream());
 }
 
@@ -110,10 +110,9 @@ function css() {
 function js() {
   return gulp
     .src([
-      './js/*.js',
-      '!./js/*.min.js',
-      '!./js/contact_me.js',
-      '!./js/jqBootstrapValidation.js'
+      './public/js/*.js',
+      '!./public/js/*.min.js',
+      '!./public/js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {
@@ -122,15 +121,15 @@ function js() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./public/js'))
     .pipe(browsersync.stream());
 }
 
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch(["./public/js/**/*", "!./public/js/**/*.min.js"], js);
+  gulp.watch("./public/**/*.html", browserSyncReload);
 }
 
 // Define complex tasks
